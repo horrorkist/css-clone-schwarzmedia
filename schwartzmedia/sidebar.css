@@ -1,0 +1,114 @@
+.sidebar-btn {
+    all: unset;
+    z-index: 15;
+    position: fixed;
+    top: 30;
+    left: 30;
+    cursor: pointer;
+}
+
+.sidebar-btn.active i {
+    color: white;
+}
+
+.sidebar-btn.scrolled {
+    top: 15;
+}
+
+.sidebar-btn i {
+    font-size: 32px;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0;
+    z-index: 1;
+    height: 100vh;
+    background-color: #212020;
+    padding-top: 150px;
+    display: flex;
+    visibility: hidden;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all 0.5s ease;
+}
+
+.sidebar>div {
+    padding-left: 80px;
+    opacity: 0;
+    transition: all 0.5s ease;
+    transition-duration: 0s;
+}
+
+.sidebar.active {
+    visibility: visible;
+    width: 650px;
+}
+
+.sidebar.active>div {
+    transition-delay: 0.4s;
+    transition-duration: 0.5s;
+    padding-left: 90px;
+    opacity: 1;
+}
+
+.sidebar a {
+    all: unset;
+    width: 100%;
+    color: white;
+    cursor: pointer;
+}
+
+.sidebar .nav ul li {
+    margin: 15px 0px;
+    font-size: 32px;
+    font-weight: 550;
+}
+
+.sidebar .nav ul li a {
+    display: block;
+    width: 300px;
+    transition: 0.5s;
+}
+
+.sidebar .nav ul li a:hover {
+    padding-left: 20px;
+}
+
+.info .info_row {
+    margin-bottom: 40px;
+    display: flex;
+}
+
+.info .info_row a {
+    display: block;
+    width: 300px;
+    white-space: nowrap;
+}
+
+.info .info_row span {
+    font-weight: 500;
+    line-height: 20px;
+}
+
+.info .info_row:first-child {
+    font-size: 20px;
+}
+
+.info .info_row:nth-child(2) {
+    flex-direction: column;
+}
+
+.info .info_row:nth-child(2) a:nth-child(2) {
+    margin-bottom: 20px;
+}
+
+.info .info_row:last-child {
+    font-size: 28px;
+}
+
+.info .info_row:last-child span {
+    font-weight: 600;
+}

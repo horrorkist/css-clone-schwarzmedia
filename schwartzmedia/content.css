@@ -1,0 +1,187 @@
+.content {
+    width: 50%;
+    min-width: 1280px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content-initial {
+    margin-top: 200px;
+    width: 100%;
+    height: calc(100vh - 200px);
+    max-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.content-initial .content-lowbar {
+    display: flex;
+    position: absolute;
+    width:99vw;
+    bottom: 30px;
+    transition: all 0.5s ease;
+}
+
+.content-initial .content-lowbar.active {
+    width: calc(99vw - 650px);
+}
+
+.content-initial .content-lowbar h2 {
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.lowbar-wrapper {
+    width: 100%;
+    max-width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.lowbar-wrapper button {
+    all: unset;
+    position: absolute;
+    top: -15px;
+    right: 50px;
+    font-size: 50px;
+    cursor: pointer;
+}
+
+.content>section {
+    width: 80%;
+}
+
+.about {
+    padding: 130px 0;
+    font-weight: 400;
+
+}
+
+.about p {
+    font-size: 30px;
+    line-height: 45px;
+    margin-bottom: 20px;
+}
+
+.about p span {
+    font-size: 24px;
+    padding-right: 50px;
+}
+
+.about a {
+    all: unset;
+    display: block;
+    width: 100%;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.about a span {
+    transition: all 0.3s ease;
+}
+
+.about a:hover span {
+    margin-right: 10px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+}
+
+.grid .cell {
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    display: grid;
+    height: 400px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100%;
+    gap: 35px;
+    padding: 20px 0;
+}
+
+.grid .cell-type2 {
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    height: 600px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100%;
+    gap: 35px;
+    padding: 20px 0;
+}
+
+.grid .cell-type3 {
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    height: 400px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100%;
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.grid .cell-type2 .info-img img {
+    width: 500px;
+    height: 350px;
+    margin-bottom: 25px;
+}
+
+.grid .cell:nth-child(even) .cell-img {
+    order: -1;
+}
+
+.grid .cell:nth-child(6) .cell-img {
+    order: 1;
+}
+
+.grid .cell-type2 .cell-info,
+.grid .cell-type3 .cell-info,
+.grid .cell .cell-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.grid .cell .cell-info .info-title {
+    font-size: 24px;
+    margin-bottom: 45px;
+}
+
+.grid .cell .cell-info .info-text {
+    font-size: 32px;
+    line-height: 40px;
+    margin-bottom: 45px;
+}
+
+.grid .cell-type2 .cell-info .info-title,
+.grid .cell-type3 .cell-info .info-title {
+    font-size: 24px;
+    margin-bottom: 25px;
+}
+
+.grid .cell-type2 .cell-info .info-text, 
+.grid .cell-type3 .cell-info .info-text {
+    font-size: 24px;
+    letter-spacing: 0px;
+    word-spacing: -2px;
+    line-height: 35px;
+    margin-bottom: 25px;
+}
+
+.info-buttons button {
+    all: unset;
+    padding: 10px 30px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: white;
+    transition: all 0.4s ease;
+}
+
+.info-buttons button:hover {
+    background-color: black;
+    color: white;
+}

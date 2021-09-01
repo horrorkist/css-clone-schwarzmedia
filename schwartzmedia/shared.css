@@ -1,0 +1,18 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+main.active {
+    left: 650;
+    width: calc(100% - 650px);
+}
+
+main.active header {
+    width: calc(100% - 650px);
+}
