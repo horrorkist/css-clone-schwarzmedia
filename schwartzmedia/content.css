@@ -7,14 +7,24 @@
 }
 
 .content-initial {
-    margin-top: 200px;
+    margin-top: 150px;
     width: 100%;
-    height: calc(100vh - 200px);
+    height: calc(100vh - 150px);
     max-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     position: relative;
+}
+
+.content-slide {
+    height: 85%;
+    padding: 0 -40%;
+}
+
+.content-slide img {
+    width: 100%;
+    height: 100%;
 }
 
 .content-initial .content-lowbar {
